@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav-section{
+    height: 60vw;
+    width: 100%;
+    background-image: url(mainimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7vw;
+    width: 100%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav .nav-logo{
+    font-size: 2.5vw;
+    padding: 1vw;
+    margin-left: 2rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: greenyellow;
+}
+nav .nav-items{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+nav .nav-items button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    background-color: transparent;
+    border: 2px solid aqua;
+    font-family: "Teachers", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: normal;
+}
+nav .nav-items button:hover{
+    background-color: aqua;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+nav .nav-items h4:hover{
+    padding: 8px;
+    background-color: #48A9A6;
+    transition: all 0.5s ease-in-out;
+    border-radius: 7px;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .main-desc{
+    padding: 4vw 3vw;
+}
+.main-desc h1{
+    text-align: center;
+    margin-top: 5vw;
+    font-size: 8vw;
+    font-weight: 700;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.main-desc p{
+    text-align: center;
+    font-size: 2vw;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 2vw;
+}
+main .main-btn button{
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: aqua;
+    font-family: "Teachers", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 1vw;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+main .main-btn button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1vw 3vw;
+    margin-top: 5vw;
+}
+.about .about-img{
+    width: 40%;
+}
+.about-img img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about .about-desc{
+    width: 50%;
+}
+.about .about-desc h1{
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    text-align: center;
+}
+.about .about-desc h2{
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 2vw;
+}
+.tours{
+    text-align: center;
+    width: 100%;
+}
+.tours h1{
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+}
+.tours p{
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2.5vw; 
+}
+.tour-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2vw;
+    grid-row-gap: 3vw;
+    width: 100%;
+    padding: 5vw;
+}
+.tour-cards .card{
+    margin-left: 5vw;
+    height: 70vh;
+    width: 75%;
+    border: 1px solid black;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.card .card-upper1{
+    height: 70%;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url(eiffel.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.card .card-upper2{
+    height: 70%;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url(alpsh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.card .card-upper3{
+    height: 70%;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url(rome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.card .card-upper4{
+    height: 70%;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url(japan.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.card-upper:hover{
+    filter: grayscale(50%);
+}
+.card-upper1 h2{
+    margin-top: 8vw;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 5vw;
+}
+.card-upper2 h2{
+    margin-top: 8vw;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 5vw;
+}
+.card-upper3 h2{
+    margin-top: 8vw;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 5vw;
+}
+.card-upper4 h2{
+    margin-top: 8vw;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 5vw;
+}
+.card-upper1 h3{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: aquamarine;
+}
+.card-upper2 h3{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: aquamarine;
+}
+.card-upper3 h3{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: aquamarine;
+}
+.card-upper4 h3{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: aquamarine;
+}
+.tour-cards .card:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+.price{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: -3vw;
+    padding: 5vw;
+    font-size: 2vw;
+}
+.price button{
+    padding: 5px 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid orange;
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+}
+.price button:hover{
+    background-color: orange;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+.footer{
+    background-image: url();
+    background-color: rgb(204, 201, 201);
+    font-family: "Kanit", sans-serif;
+    padding: 3vw;
+    text-align: center;
+    margin-top: 5vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer h2{
+    font-size: 2vw;
+    font-weight: 400;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 2vw;
+    margin: 1rem;
+}
